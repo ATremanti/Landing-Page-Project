@@ -6,7 +6,6 @@ body {
 }
 
 .header {
-    min-height: 100px;
     background-color: #1f2937;
     padding: 16px;
     display: flex;
@@ -28,17 +27,11 @@ ul {
     color: #e5e7eb;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .hero-section {
     background-color: #1f2937;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .hero-section h2 {
@@ -50,12 +43,13 @@ ul {
 .hero-1, .hero-2 {
     padding: 24px;
     width: 35%;
-    height: 220px;
 }
 
 .hero-2 {
     background-color: #e5e7eb;
     text-align: center;
+    height: 248px;
+    padding: 0;
 }
 
 .hero-2 p {
@@ -66,15 +60,19 @@ ul {
 .info-section {
     background-color: white;
     display: flex;
-    justify-content: center;
-    gap: 18px;
+    flex-direction: column;
+    align-items: center;
+}
 
+.info-group {
+    display: flex;
+    gap: 18px;
+    padding-bottom: 90px;
 }
 
 .info-title {
     text-align: center;
     font-size: 36px;
-    margin: 30px 30px 60px 30px;
     font-weight: bold;
     color: #1f2937;
 }
@@ -91,13 +89,13 @@ ul {
 
 .quote-section {
     background-color: #e5e7eb;
-    padding: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 cite {
+    text-align: justify;
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
@@ -107,12 +105,12 @@ cite {
     color: #1f2937;
     font-weight: bold;
     float: right;
-    margin-top: 42px;
+    margin-top: 50px;
 }
 
 .quote-space {
     width: 35%;
-    height: 220px;
+    margin: 50px;
 }
 
 .cta-section {
@@ -124,29 +122,29 @@ cite {
 .cta-1 {
     background-color: #3882f6;
     color: white;
-    border-radius: 5px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     padding: 24px;
+    margin: 60px;
 }
 
 .cta-1-title {
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 
 .cta-1-p {
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 button {
     background-color: #3882f6;
     border-color: white;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 8px;
     color: white;
     margin-left: 48px;
-    width: 96px;
-    height: 30px;
+    padding: 8px 12px;
 }
 
 .hero-button {
@@ -162,5 +160,5 @@ button {
 }
 
 .hero-section, .info-section, .quote-section, .cta-section {
-    min-height: 330px;
+    padding: 60px;
 }
